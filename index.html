@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Streamio</title>
 
     <link rel="stylesheet" href="BScss/bootstrap.min.css" />
     <link rel="stylesheet" href="./CSSFiles/style.css" />
@@ -11,17 +11,41 @@
     <script src="BSjs/bootstrap.bundle.min.js"></script>
     <script src="./JavascriptFiles/main.js"></script>
   </head>
-  <body>
-    <button onclick="sendMail()">Click me to send mails</button>
+  <body class="bg-dark">
+    <nav class="bg-dark py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="text-light">Streamio</h1>
+        <a href="register.html" class="loginButton">
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            data-mdb-ripple-init
+            data-mdb-ripple-color="dark"
+          >
+            Sign in
+          </button>
+        </a>
+      </div>
+    </nav>
 
-    <hr />
+    <div class="text-center backgroundImage">
+      <div class="backgroundText">
+        <h1 class="text-white">Movies and shows</h1>
+        <h1 class="text-white">in all genres</h1>
+        <p class="text-white">Try out now! Only £10 a month</p>
+        <a href="register.html">
+          <button
+            type="button"
+            class="btn btn-outline-light px-5 py-2"
+            data-mdb-ripple-init
+            data-mdb-ripple-color="dark"
+          >
+            Register now!
+          </button>
+        </a>
+      </div>
+    </div>
 
-    <a href="register.html">
-      <button id="signUpButton">Register now</button>
-    </a>
-    <a href="register.html">
-      <button id="signInButton">login now</button>
-    </a>
     <script src="./JavascriptFiles/register.js"></script>
   </body>
 </html>

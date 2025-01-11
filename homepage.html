@@ -3,51 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <style>
-      body {
-        padding: 30px;
-        background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-      }
-      h1 {
-        text-align: center;
-      }
-      button {
-        color: blueviolet;
-        background-color: #c9d6ff;
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 1rem;
-        font-weight: bold;
-        border: none;
-      }
-      button:hover {
-        text-decoration: underline;
-        color: blue;
-      }
-      button,
-      div {
-        margin-left: 15%;
-        font-size: 20px;
-        padding: 10px;
-      }
-      div {
-        font-weight: 400;
-        color: rgb(12, 11, 11);
-      }
-      span {
-        font-weight: 600;
-        font-size: 22px;
-        color: black;
-      }
-    </style>
+    <title>Streamio</title>
+
+    <link rel="stylesheet" href="BScss/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSSFiles/homepage.css" />
+
     <script type="module" src="./JavascriptFiles/homepage.js"></script>
   </head>
-  <body>
-    <h1>Welcome to the Homepage</h1>
-    <div>First Name: <span id="loggedUserFName"></span></div>
-    <div>Last Name: <span id="loggedUserLName"></span></div>
-    <div>Email: <span id="loggedUserEmail"></span></div>
-    <button id="logout">Logout</button>
+  <body class="bg-dark">
+    <nav class="bg-dark py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="text-light">Streamio</h1>
+        <div>
+          <span id="loggedUserFName" class="text-white"></span>
+          <img
+            src="./images/free_icon_1.svg"
+            alt="Profile Icon"
+            class="profileIcon"
+          />
+          <button
+            id="logout"
+            type="button"
+            class="btn btn-outline-light"
+            data-mdb-ripple-init
+            data-mdb-ripple-color="dark"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <hr class="text-white" style="border: 2px solid white" />
+
+    <div class="container d-flex justify-content-center py-3">
+      <h1 class="text-white">
+        <b><u>Genres</u></b>
+      </h1>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <ul>
+        <li>
+          <button class="buttonLook text-white py-2 px-5">Horror</button>
+        </li>
+        <li>
+          <button class="buttonLook text-white py-2 px-5">Fantasy</button>
+        </li>
+        <li><button class="buttonLook text-white py-2 px-5">Comedy</button></li>
+        <li><button class="buttonLook text-white py-2 px-5">Sci-fi</button></li>
+        <li><button class="buttonLook text-white py-2 px-5">Drama</button></li>
+        <li>
+          <button class="buttonLook text-white py-2 px-5">See more</button>
+        </li>
+      </ul>
+    </div>
+    <hr class="text-white container" style="border: 2px solid white" />
+    <div class="container d-flex justify-content-center">
+      <ul>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+      </ul>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <ul>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+        <li><img src="https://placehold.jp/200x250.png" alt="" /></li>
+      </ul>
+    </div>
   </body>
 </html>
